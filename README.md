@@ -13,7 +13,7 @@ $$
 \quad\text{for every odd prime }p\le389.
 $$
 
-Here the parentheses denote the Legendre symbol. Its first failing prime is $397$.
+The first failing prime for $N$ is $397$.
 
 **Independent exhaustive-search review is pending.** Candidate arithmetic establishes the upper bounds
 
