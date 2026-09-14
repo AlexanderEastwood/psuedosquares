@@ -1,8 +1,34 @@
 # Pseudosquares
 
-**12299505549823064272744801** is the smallest survivor from our completed search. It is a nonsquare, is 1 modulo 8, and is a nonzero quadratic residue at every odd prime through 389. Its first failing prime is 397.
+The smallest survivor from our completed search is
 
-**Independent exhaustive-search review is pending.** This number is a verified upper bound for L379, L383 and L389. Exact equality remains conditional on accepting the GPU enumeration/exclusions and Sorenson’s published L379 > 10^25 bound. The conditional L397 > 2×10^25 bound has the same dependencies. This repository does not assert an independently certified minimum or record priority.
+$$
+N = 12299505549823064272744801.
+$$
+
+It is a nonsquare satisfying $N \equiv 1 \pmod{8}$ and
+
+$$
+\left(\frac{N}{p}\right)=1
+\quad\text{for every odd prime }p\le389.
+$$
+
+Here the parentheses denote the Legendre symbol. Its first failing prime is $397$.
+
+**Independent exhaustive-search review is pending.** Candidate arithmetic establishes the upper bounds
+
+$$
+L_{379}\le N,\qquad L_{383}\le N,\qquad L_{389}\le N.
+$$
+
+Exact equality remains conditional on accepting the GPU enumeration/exclusions and Sorenson’s published bound $L_{379}>10^{25}$. Under those assumptions, the proposed results are
+
+$$
+L_{379}=L_{383}=L_{389}=N,
+\qquad L_{397}>2\times10^{25}.
+$$
+
+This repository does not assert an independently certified minimum or record priority.
 
 ## Documents and data
 
@@ -27,7 +53,7 @@ The certificate describes a frozen full review packet whose 7,716,406 serialized
 
 ## OEIS preparation
 
-[A002189](https://oeis.org/A002189) indexes by the number of odd primes tested. The proposed indices 74, 75, 76 correspond to primes 379, 383, 389. Each has verified upper bound 12299505549823064272744801. Do not add these as unconditional b-file terms before the minimum claims are accepted. No OEIS submission has been made.
+[A002189](https://oeis.org/A002189) indexes by the number of odd primes tested. The proposed indices $74,75,76$ correspond to primes $379,383,389$. Each has verified upper bound $N$: $a(74)\le N$, $a(75)\le N$, and $a(76)\le N$. Do not add these as unconditional b-file terms before the minimum claims are accepted. No OEIS submission has been made.
 
 Prior work: Jonathan P. Sorenson, [Sieving for Pseudosquares and Pseudocubes in Parallel Using Doubly-Focused Enumeration and Wheel Datastructures](https://arxiv.org/abs/1001.3316); D. J. Bernstein, [Doubly focused enumeration](https://cr.yp.to/focus.html).
 
