@@ -1,0 +1,4 @@
+oeis_index,prime,value,status
+74,379,12299505549823064272744801,verified_upper_bound_conditional_exact_term
+75,383,12299505549823064272744801,verified_upper_bound_conditional_exact_term
+76,389,12299505549823064272744801,verified_upper_bound_conditional_exact_term

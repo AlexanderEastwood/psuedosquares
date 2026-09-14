@@ -1,0 +1,11 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "exclude": [
+    "node_modules",
+    "__pycache__",
+    ".Codex/worktrees",
+    "data",
+    "bundle/sources"
+  ]
+}

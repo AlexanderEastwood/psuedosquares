@@ -1,0 +1,52 @@
+[
+  {
+    "n": "12299505549823064272744801",
+    "sqrt_floor": "3507065090616",
+    "mod8": 1,
+    "first_failing_prime": 397,
+    "passes_through": 389,
+    "tp": "790767687071310684",
+    "tn": "1723450262389676227",
+    "euler_and_jacobi_agree": true
+  },
+  {
+    "n": "15650149438046685889225369",
+    "sqrt_floor": "3956026976405",
+    "mod8": 1,
+    "first_failing_prime": 397,
+    "passes_through": 389,
+    "tp": "279378794197242189",
+    "tn": "608896220765254723",
+    "euler_and_jacobi_agree": true
+  },
+  {
+    "n": "16097006495958886408753441",
+    "sqrt_floor": "4012107488086",
+    "mod8": 1,
+    "first_failing_prime": 383,
+    "passes_through": 379,
+    "tp": "1425889955726473465",
+    "tn": "3107676829132146427",
+    "euler_and_jacobi_agree": true
+  },
+  {
+    "n": "19836943388271112639203721",
+    "sqrt_floor": "4453868362252",
+    "mod8": 1,
+    "first_failing_prime": 383,
+    "passes_through": 379,
+    "tp": "316042716804882022",
+    "tn": "688803945967085227",
+    "euler_and_jacobi_agree": true
+  },
+  {
+    "n": "19849113888816140052681001",
+    "sqrt_floor": "4455234437020",
+    "mod8": 1,
+    "first_failing_prime": 389,
+    "passes_through": 383,
+    "tp": "1380658676310089327",
+    "tn": "3009096852162157987",
+    "euler_and_jacobi_agree": true
+  }
+]

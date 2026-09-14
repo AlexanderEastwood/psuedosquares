@@ -1,0 +1,235 @@
+{
+  "schema": "pseudosquare-review-draft-v1",
+  "created_utc": "2026-09-14T15:17:03.909474+00:00",
+  "status": "DRAFT_INDEPENDENT_REVIEW_PENDING",
+  "definition": "smallest positive nonsquare x == 1 mod 8 with nonzero quadratic residue at every odd prime <= p",
+  "numerical_interval": {
+    "lo_inclusive": "10000000000000000000000001",
+    "hi_exclusive": "20000000000000000000000001"
+  },
+  "claims": {
+    "C1": {
+      "kind": "verified_upper_bound",
+      "primes": [
+        379,
+        383,
+        389
+      ],
+      "value": "12299505549823064272744801"
+    },
+    "C2": {
+      "kind": "conditional_exact_minimum",
+      "primes": [
+        379,
+        383,
+        389
+      ],
+      "value": "12299505549823064272744801",
+      "depends_on": [
+        "GPU enumeration and exclusions accepted after review",
+        "published L379 > 10^25 accepted"
+      ]
+    },
+    "C3": {
+      "kind": "conditional_strict_lower_bound",
+      "prime": 397,
+      "value": "20000000000000000000000000",
+      "depends_on": [
+        "same dependencies as C2",
+        "all survivors fail at or before 397"
+      ]
+    }
+  },
+  "recorded_coverage": "all three partitions complete; full serialized ledger check passed",
+  "independent_gpu_exhaustion_review": "NOT_COMPLETED",
+  "independent_full_rerun": "NOT_PERFORMED",
+  "historical_bound_reproduced": false,
+  "reviewer_signoff": null,
+  "totals": {
+    "total_batches": 7716406,
+    "total_candidates": "17928682231606059",
+    "total_squares": "122862466131"
+  },
+  "survivors": [
+    {
+      "n": "12299505549823064272744801",
+      "sqrt_floor": "3507065090616",
+      "mod8": 1,
+      "first_failing_prime": 397,
+      "passes_through": 389,
+      "tp": "790767687071310684",
+      "tn": "1723450262389676227",
+      "euler_and_jacobi_agree": true
+    },
+    {
+      "n": "15650149438046685889225369",
+      "sqrt_floor": "3956026976405",
+      "mod8": 1,
+      "first_failing_prime": 397,
+      "passes_through": 389,
+      "tp": "279378794197242189",
+      "tn": "608896220765254723",
+      "euler_and_jacobi_agree": true
+    },
+    {
+      "n": "16097006495958886408753441",
+      "sqrt_floor": "4012107488086",
+      "mod8": 1,
+      "first_failing_prime": 383,
+      "passes_through": 379,
+      "tp": "1425889955726473465",
+      "tn": "3107676829132146427",
+      "euler_and_jacobi_agree": true
+    },
+    {
+      "n": "19836943388271112639203721",
+      "sqrt_floor": "4453868362252",
+      "mod8": 1,
+      "first_failing_prime": 383,
+      "passes_through": 379,
+      "tp": "316042716804882022",
+      "tn": "688803945967085227",
+      "euler_and_jacobi_agree": true
+    },
+    {
+      "n": "19849113888816140052681001",
+      "sqrt_floor": "4455234437020",
+      "mod8": 1,
+      "first_failing_prime": 389,
+      "passes_through": 383,
+      "tp": "1380658676310089327",
+      "tn": "3009096852162157987",
+      "euler_and_jacobi_agree": true
+    }
+  ],
+  "versions": {
+    "legacy": {
+      "script_sha256": "4ceca7948b26896603a039b482f6bad6823d4650357c1b47fa42d40c9150042e",
+      "kernel_sha256": "64083cecaa903123b90264d92573c23381920a9fbf7f62c773e6b94223394bc2"
+    },
+    "new": {
+      "script_sha256": "ed9a133c46b082051f8b47b399075a6f3ebe292d4694052bf131cf5bccccd4ab",
+      "kernel_sha256": "2ac7775b837330987996d5426c5b21b9b429872e10f732c85c2a1c1f097bad71"
+    }
+  },
+  "ledger_archive_sha256": "432c94acc59db00d6ea925af5543ba98f7368dcf80ab3dc2b35e99fe4c205c7a",
+  "ledger_archive_bytes": 738560818,
+  "ledger_receipts": [
+    {
+      "worker": 0,
+      "status": "PASS",
+      "bytes": 1455930610,
+      "sha256": "edbf6a2df08f982fb50725e3569fac8078e4922d03ff5991267e3043b53f633b",
+      "batches": 2572135,
+      "adjacent_replay_rows": 0,
+      "candidates": "5976227309646133",
+      "squares": "40954079504",
+      "passed": "40954079506",
+      "legacy_batches": 62058,
+      "v2_batches": 2510077,
+      "hit_batches": [
+        {
+          "committed_batch": 1048008,
+          "a": "279378713948378539",
+          "b": "279378980529340256",
+          "na": 16777766,
+          "nb": 16551337,
+          "candidates": 2323401877,
+          "squares": 15933,
+          "passed": 15934,
+          "found": [
+            "15650149438046685889225369"
+          ]
+        },
+        {
+          "committed_batch": 1185542,
+          "a": "316042659937164417",
+          "b": "316042926518126134",
+          "na": 16773254,
+          "nb": 16550276,
+          "candidates": 2322694732,
+          "squares": 16093,
+          "passed": 16094,
+          "found": [
+            "19836943388271112639203721"
+          ]
+        }
+      ]
+    },
+    {
+      "worker": 1,
+      "status": "PASS",
+      "bytes": 1459263464,
+      "sha256": "0e672f8fdbe252e3e90608be0b63880d21bd038c2886c3b035312e2764abb404",
+      "batches": 2572135,
+      "adjacent_replay_rows": 0,
+      "candidates": "5976227517383034",
+      "squares": "40954171702",
+      "passed": "40954171703",
+      "legacy_batches": 63291,
+      "v2_batches": 2508844,
+      "hit_batches": [
+        {
+          "committed_batch": 394198,
+          "a": "790767473163236181",
+          "b": "790767739744197898",
+          "na": 16777786,
+          "nb": 16547868,
+          "candidates": 2323002079,
+          "squares": 16000,
+          "passed": 16001,
+          "found": [
+            "12299505549823064272744801"
+          ]
+        }
+      ]
+    },
+    {
+      "worker": 2,
+      "status": "PASS",
+      "bytes": 1474988160,
+      "sha256": "4a0ebf20c50498f6b46c3abaae665f1a6278a5d6b19fb6c226edb7747dc77b8d",
+      "batches": 2572136,
+      "adjacent_replay_rows": 0,
+      "candidates": "5976227404576892",
+      "squares": "40954214925",
+      "passed": "40954214927",
+      "legacy_batches": 9735,
+      "v2_batches": 2562401,
+      "hit_batches": [
+        {
+          "committed_batch": 34866,
+          "a": "1380658460822592549",
+          "b": "1380658727403554266",
+          "na": 16779329,
+          "nb": 16551423,
+          "candidates": 2323749685,
+          "squares": 15910,
+          "passed": 15911,
+          "found": [
+            "19849113888816140052681001"
+          ]
+        },
+        {
+          "committed_batch": 204538,
+          "a": "1425889785759039373",
+          "b": "1425890052340001090",
+          "na": 16777761,
+          "nb": 16550378,
+          "candidates": 2323369217,
+          "squares": 15974,
+          "passed": 15975,
+          "found": [
+            "16097006495958886408753441"
+          ]
+        }
+      ]
+    }
+  ],
+  "reference": {
+    "url": "https://arxiv.org/pdf/1001.3316v2",
+    "section": "2",
+    "pdf_page": 2
+  },
+  "verification_receipt_sha256": "10a899fb5192c5fae65fbfc4ca67545cf5b7119a08123ff2837ab17e668b2245"
+}
